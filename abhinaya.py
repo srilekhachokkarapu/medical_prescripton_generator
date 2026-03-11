@@ -11,7 +11,7 @@ import os
 # GROQ API KEY
 # -------------------------
 
-client = Groq(api_key="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")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # -------------------------
 # PAGE SETTINGS
@@ -189,4 +189,5 @@ Allergies: {allergies}<br/><br/>
 
         # remove temp files later
         if os.path.exists(audio_file):
+
             pass
